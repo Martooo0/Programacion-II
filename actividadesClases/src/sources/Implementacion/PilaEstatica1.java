@@ -25,22 +25,22 @@ public class PilaEstatica1 implements PilaTDA {
     private int cantidad;
 
     public void InicializarPila() {
-        this.datos = new int[100];
-        this.cantidad = 0;
+        datos = new int[100];
+        cantidad = 0;
     }
 
     public void Apilar(int x) {
-        if (this.cantidad < 100) {
-            for(int i = this.cantidad; i > 0; --i) {
-                this.datos[i] = this.datos[i - 1];
+        if (cantidad < 100) {
+            for(int i = cantidad; i > 0; --i) {
+                datos[i] = datos[i - 1];
             }
-            this.datos[0] = x;
+            datos[0] = x;
             cantidad++;
         }
     }
 
     public void Desapilar() {
-        if (!this.PilaVacia()) {
+        if (!PilaVacia()) {
             for(int i = 0; i < cantidad - 1; ++i) {
                 datos[i] = datos[i + 1];
             }
