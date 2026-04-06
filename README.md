@@ -4,7 +4,6 @@
 
 | Nombre            | Legajo   |
 |-------------------|----------|
-| Christopher Hess  | 1186096  |
 | Pablo Kim         | 1162102  |
 | Lisandro Forgione | 1186420  |
 | Nicolás Miozi     | 1189992  |
