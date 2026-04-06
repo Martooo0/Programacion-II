@@ -9,6 +9,3 @@
 | Nicolás Miozi     | 1189992  |
 | Matías Parodi     | 1201606  |
 | Martín Ferreira   | 1187544  |
-
-
-Drive: https://drive.google.com/drive/folders/1cQXnk0wx8KeApmkxrRhBd_s5er7rYdKY?usp=sharing
