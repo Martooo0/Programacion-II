@@ -14,7 +14,7 @@ Bienvenido al repositorio central de prácticas y TPs para la materia Programaci
 
 ---
 
-### 📂 Arquitectura del Proyecto
+### Arquitectura del Proyecto
 
 El proyecto está estructurado de manera que el código central y reutilizable se mantenga aislado de los ejercicios prácticos de cada semana. 
 
@@ -49,23 +49,23 @@ A continuación se detalla el diagrama de directorios principal:
 La arquitectura de este repositorio está dividida en tres pilares principales para garantizar el orden y la reutilización del código.
 
 #### 1. El Núcleo (`sources/`) 
-Esta es la carpeta más importante a nivel arquitectónico. Aquí residen todas las estructuras de datos que se construyen durante la cursada, aisladas del código de prueba. Se divide en dos grandes grupos:
+Esta es la carpeta más importante a nivel arquitectónico. Dentro residen todas las estructuras de datos que se construyen durante la cursada, aisladas del código de prueba. Se divide en dos grandes grupos:
 
-* **`Interfaces/` (El Contrato):** Contiene las definiciones puras de los Tipos de Datos Abstractos (TDA). Definen el **QUÉ** hace la estructura (sus métodos y firmas) ocultando los detalles de su programación interna.
-* **`Implementacion/` (El Motor):** Contiene las clases concretas de Java. Aquí reside la lógica dura (estática o dinámica) que define el **CÓMO** se guardan, mueven y manipulan los datos físicamente en la memoria.
+* **`Interfaces/` (El Contrato):** Contiene las definiciones puras de los Tipos de Datos Abstractos (TDA).
+* **`Implementacion/` (El Motor):** Contiene las clases concretas de Java. Dentro reside la lógica dura (estática o dinámica) que define el **CÓMO** se guardan, mueven y manipulan los datos físicamente en la memoria.
 
 #### 2. Pizarras de Ejecución (`claseX/mainClaseX.java`) 
 Cada carpeta semanal (`clase2`, `clase3`, etc.) funciona como un entorno aislado de pruebas. El archivo principal de cada carpeta actúa como una **"pizarra interactiva"**.
 > **Objetivo:** Instanciar las herramientas de la carpeta `sources` para probar algoritmos, resolver guías y verificar el comportamiento de los TDAs en la práctica, manteniendo el código núcleo siempre limpio y sin modificaciones accidentales.
 
-#### 3. Recursos Complementarios (`claseX/archivos/`) 📎
-Para no contaminar el directorio con archivos que no sean código fuente de Java, todo el material de apoyo se almacena de forma ordenada en este subdirectorio.
+#### 3. Recursos Complementarios (`claseX/archivos/`)
+Para no llenar el directorio con archivos que no sean código fuente de Java, todo el material de apoyo se almacena de forma ordenada en este subdirectorio.
 
-**¿Qué vas a encontrar aquí?**
-- 📄 Guías de trabajos prácticos (PDFs).
-- 🖼️ Diagramas y visualizaciones de memoria.
-- 👨‍🏫 Presentaciones teóricas de la cátedra.
-- 📝 Resoluciones escritas o notas teóricas en Markdown (`.md`).
+**¿Qué vas a encontrar dentro?**
+- Guías de trabajos prácticos (PDFs).
+- Diagramas y visualizaciones de memoria.
+- Presentaciones teóricas de la cátedra.
+- Resoluciones escritas o notas teóricas en Markdown (`.md`).
 
 ---
 
