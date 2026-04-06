@@ -6,30 +6,33 @@ public class PilaEstatica2 implements PilaTDA {
     private static final int MAX = 100;
     private int[] datos;
 
+    @Override
     public void InicializarPila() {
-        this.datos = new int[101];
+        this.datos = new int[101]; 
         this.datos[0] = 0;
     }
 
+    @Override
     public void Apilar(int x) {
         if (this.datos[0] < 100) {
-            int var10002 = this.datos[0]++;
+            this.datos[0]++;
             this.datos[this.datos[0]] = x;
         }
-
     }
 
+    @Override
     public void Desapilar() {
         if (!this.PilaVacia()) {
-            int var10002 = this.datos[0]--;
+            this.datos[0]--;
         }
-
     }
 
+    @Override
     public int Tope() {
         return this.datos[this.datos[0]];
     }
 
+    @Override
     public boolean PilaVacia() {
         return this.datos[0] == 0;
     }
