@@ -21,7 +21,6 @@ import sources.Interfaces.PilaTDA;
  * de procesamiento en comparación a las alternativas O(1).
  */
 public class PilaEstatica1 implements PilaTDA {
-    private static final int MAX = 100;
     private int[] datos;
     private int cantidad;
 
