@@ -4,7 +4,8 @@ import sources.Interfaces.PilaTDA;
 
 /**
  * Esta implementación de pila utiliza el primer valor del array como el contador, por lo que cada vez que se utiliza datos[datos[0]] se está acudiendo al dato del índice posterior al último ingresado 
- * Posee una complejidad matematica de O(1), la ventaja es la ausencia de necesidad de una variable externa, avogando por un uso menor de memoria, la desventaja es que rompe el que viola el principio "KISS" 
+ * El tope se encuentra en el último índice del array (siendo la posición [datos[0] y no [datos[0]-1 debido que al apilar primero se aumenta el contador y luego se inserta)
+ * Posee una complejidad matematica de O(1), la ventaja es la ausencia de necesidad de una variable externa, avogando por el menor uso posible de memoria, la desventaja es que rompe el principio "KISS" 
  */
 
 
