@@ -3,11 +3,18 @@ package sources.Implementacion;
 import sources.Interfaces.PilaTDA;
 
 /**
- * Esta implementación de pila tiene su tope en el último valor indexado del array, por lo que se apila al final y se elimina por soft delete, reduciendo el contador.
- * Posee una complejidad matematica de O(1)
+ * Implementación estática de una Pila (TDA) de complejidad O(1) basada en un contador externo.
+ * * Estrategia de diseño:
+ * Utiliza una variable independiente (cantidad) para gestionar la frontera lógica de la pila. 
+ * El tope siempre se ubica en el último elemento ingresado (cantidad - 1). La eliminación 
+ * de elementos se realiza mediante baja lógica (Soft Delete) reduciendo el contador.
+ * * Ventajas:
+ * Alta legibilidad, código limpio (Clean Code) y estricto cumplimiento de la Separación 
+ * de Responsabilidades. Es la implementación estándar y recomendada en la industria.
+ * * Desventajas:
+ * Requiere la declaración de una variable de estado adicional, aunque su impacto en 
+ * la memoria es imperceptible frente a los beneficios enormes de mantenimiento.
  */
-
-
 public class PilaEstatica3 implements PilaTDA {
     private static final int MAX = 100;
     private int[] datos;
