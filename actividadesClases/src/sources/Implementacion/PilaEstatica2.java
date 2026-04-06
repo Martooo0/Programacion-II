@@ -3,7 +3,6 @@ package sources.Implementacion;
 import sources.Interfaces.PilaTDA;
 
 public class PilaEstatica2 implements PilaTDA {
-    private static final int MAX = 100;
     private int[] datos;
 
     @Override
