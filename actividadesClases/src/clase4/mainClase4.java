@@ -1,45 +1,42 @@
-// Import Interface
+package clase4;
 
-import Interface.ConjuntoTDA;
-import Interface.PilaTDA;
-import Interface.ColaTDA;
-import Interface.DiccionarioSimpleTDA;
-import Interface.DiccionarioMultipleTDA;
-import Interface.ColaPrioridadTDA;
+// Import Interfaces
 
-// Import Implementacion
+import interfaces.PilaTDA;
+import interfaces.ConjuntoTDA;
+import interfaces.DiccionarioSimpleTDA;
+import interfaces.DiccionarioMultipleTDA;
 
-import Implementacion.ConjuntoEstatico;
-import Implementacion.ColaEstatica;
-import Implementacion.ColaPrioridadEstatica;
-import Implementacion.DiccionarioMultipleEstatico;
-import Implementacion.DiccionarioSimpleEstatico;
-import Implementacion.Pila.Estrategia_1;
-import Implementacion.Pila.Estrategia_2;
-import Implementacion.Pila.Estrategia_3;
+// Import Implementaciones Estaticas
 
-public class Main {
+import implementacion.pila.PilaEstatica1;
+import implementacion.ColaPrioridadEstatica;
+import implementacion.ConjuntoEstatico;
+import implementacion.DiccionarioMultipleEstatico;
+import implementacion.DiccionarioSimpleEstatico;
+
+public class mainClase4 {
     public static void main(String[] args) {
 
         // Ejercicios de Bloque 1: Pilas (LIFO - Last In, First Out) Bascicamente el último que entro es el primero que sale
 
         // 1 Historial de Navegación
 
-        PilaTDA historial = new Estrategia_1();
+        PilaTDA historial = new PilaEstatica1();
         historial.InicializarPila();
 
         historial.Apilar(1); // Al id 1 lo hago simular como palabra: "google.com"
         historial.Apilar(2); // Al id 2 lo hago simular como palabra: "gemini.google.com"
         historial.Apilar(3); // Al id 3 lo hago simular como palabra: "x.com"
 
-        System.out.println("Pagina actual (ID): " + historial.Tope() + " (stackoverflow.com)");
+        System.out.println("\nPagina actual (ID): " + historial.Tope() + " (stackoverflow.com)");
         System.out.println("Usuario aprieta 'Atras'...");
         historial.Desapilar();
         System.out.println("Nueva pagina actual (ID): " + historial.Tope() + " (campus.utn.edu.ar)");
 
         // 2 Editor de Codigo
 
-        PilaTDA estados = new Estrategia_1();
+        PilaTDA estados = new PilaEstatica1();
         estados.InicializarPila();
 
         estados.Apilar(100); // Estado base (vacio)
@@ -54,7 +51,7 @@ public class Main {
 
         int[] expresionNumerica = {1, 1, 0, 0, 0, 2, 0, 0, 2}; // ( ( a + b ) * c )
 
-        PilaTDA parentesis = new Estrategia_1();
+        PilaTDA parentesis = new PilaEstatica1();
         parentesis.InicializarPila();
         boolean errorBalanceo = false;
 
@@ -81,10 +78,10 @@ public class Main {
         // "ALGORITMOS" en valores numericos - Formato ASCII
         int[] palabraNumerica = {65, 76, 71, 79, 82, 73, 84, 77, 79, 83};
 
-        PilaTDA pila1 = new Estrategia_1();
+        PilaTDA pila1 = new PilaEstatica1();
         pila1.InicializarPila();
 
-        PilaTDA pilaAux = new Estrategia_1();
+        PilaTDA pilaAux = new PilaEstatica1();
         pilaAux.InicializarPila();
 
         for (int valorLetra : palabraNumerica) { // Apila con un for-each
@@ -106,7 +103,7 @@ public class Main {
 
         // 5 Pila de Llamadas (Call Stack)
 
-        PilaTDA callStack = new Estrategia_1();
+        PilaTDA callStack = new PilaEstatica1();
         callStack.InicializarPila();
 
         // Establezco: 1 = Main, 2 = CalcularPromedio y 3 = Sumar
@@ -118,7 +115,7 @@ public class Main {
 
         // 6 Navegacion de Directorios
 
-        PilaTDA rutas = new Estrategia_1();
+        PilaTDA rutas = new PilaEstatica1();
         rutas.InicializarPila();
 
         // Establezco: 1 = C:/, 2 = Usuarios y 3 = Documentos
@@ -433,5 +430,5 @@ public class Main {
         // Departamento de Tecnologia
 
 
-}
+    }
 }

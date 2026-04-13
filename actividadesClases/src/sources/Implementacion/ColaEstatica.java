@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.ColaTDA;
+import interfaces.ColaTDA;
 
 public class ColaEstatica implements ColaTDA {
     private static final int MAX = 100;

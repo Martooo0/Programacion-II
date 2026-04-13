@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.ConjuntoTDA;
+import interfaces.ConjuntoTDA;
 
 public class ConjuntoEstatico implements ConjuntoTDA {
     private static final int MAX = 100;

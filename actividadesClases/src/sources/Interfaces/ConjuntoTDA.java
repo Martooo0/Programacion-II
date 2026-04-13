@@ -1,4 +1,4 @@
-package sources.Interfaces;
+package interfaces;
 
 public interface ConjuntoTDA {
     void InicializarConjunto();

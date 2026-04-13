@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.DiccionarioMultipleTDA;
+import interfaces.DiccionarioMultipleTDA;
 
 public class DiccionarioMultipleEstatico implements DiccionarioMultipleTDA {
     private static final int MAX_CLAVES = 100;

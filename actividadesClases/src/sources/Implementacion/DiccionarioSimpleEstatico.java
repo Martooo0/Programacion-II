@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.DiccionarioSimpleTDA;
+import interfaces.DiccionarioSimpleTDA;
 
 public class DiccionarioSimpleEstatico implements DiccionarioSimpleTDA {
     private static final int MAX = 100;
