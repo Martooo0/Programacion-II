@@ -2,25 +2,27 @@ package clase4;
 
 // Import Interfaces
 
-import interfaces.PilaTDA;
-import interfaces.ConjuntoTDA;
-import interfaces.DiccionarioSimpleTDA;
-import interfaces.DiccionarioMultipleTDA;
+import sources.interfaces.PilaTDA;
+import sources.interfaces.ConjuntoTDA;
+import sources.interfaces.DiccionarioSimpleTDA;
+import sources.interfaces.DiccionarioMultipleTDA;
 
 // Import Implementaciones Estaticas
 
-import implementacion.pila.PilaEstatica1;
-import implementacion.ColaPrioridadEstatica;
-import implementacion.ConjuntoEstatico;
-import implementacion.DiccionarioMultipleEstatico;
-import implementacion.DiccionarioSimpleEstatico;
+import sources.implementacion.pila.PilaEstatica1;
+import sources.implementacion.ColaPrioridadEstatica;
+import sources.implementacion.ConjuntoEstatico;
+import sources.implementacion.DiccionarioMultipleEstatico;
+import sources.implementacion.DiccionarioSimpleEstatico;
 
 public class mainClase4 {
     public static void main(String[] args) {
 
-        // Ejercicios de Bloque 1: Pilas (LIFO - Last In, First Out) Bascicamente el último que entro es el primero que sale
+        // ==============================================================
+        //   Ejercicios de Bloque 1: Pilas (LIFO - Last In, First Out)
+        // ==============================================================
 
-        // 1 Historial de Navegación
+        // --- 1 Historial de Navegación
 
         PilaTDA historial = new PilaEstatica1();
         historial.InicializarPila();
@@ -34,7 +36,7 @@ public class mainClase4 {
         historial.Desapilar();
         System.out.println("Nueva pagina actual (ID): " + historial.Tope() + " (campus.utn.edu.ar)");
 
-        // 2 Editor de Codigo
+        // --- 2 Editor de Codigo
 
         PilaTDA estados = new PilaEstatica1();
         estados.InicializarPila();
@@ -47,7 +49,7 @@ public class mainClase4 {
         estados.Desapilar();
         System.out.println("Estado recuperado " + estados.Tope());
 
-        // 3 Balanceo de Parentesis
+        // --- 3 Balanceo de Parentesis
 
         int[] expresionNumerica = {1, 1, 0, 0, 0, 2, 0, 0, 2}; // ( ( a + b ) * c )
 
@@ -73,7 +75,7 @@ public class mainClase4 {
             System.out.println("La expresion NO esta balanceada.");
         }
 
-        // 4 Reversion de Strings
+        // --- 4 Reversion de Strings
 
         // "ALGORITMOS" en valores numericos - Formato ASCII
         int[] palabraNumerica = {65, 76, 71, 79, 82, 73, 84, 77, 79, 83};
@@ -101,7 +103,7 @@ public class mainClase4 {
         }
         System.out.println();
 
-        // 5 Pila de Llamadas (Call Stack)
+        // --- 5 Pila de Llamadas (Call Stack)
 
         PilaTDA callStack = new PilaEstatica1();
         callStack.InicializarPila();
@@ -113,7 +115,7 @@ public class mainClase4 {
 
         System.out.println("El tope es: " + callStack.Tope());
 
-        // 6 Navegacion de Directorios
+        // --- 6 Navegacion de Directorios
 
         PilaTDA rutas = new PilaEstatica1();
         rutas.InicializarPila();
@@ -126,10 +128,12 @@ public class mainClase4 {
         System.out.println("Carpeta actual: " + rutas.Tope() + " (Documentos)");
         rutas.Desapilar();
         System.out.println(rutas.Tope());
+        // =================================================================
+        //   Ejercicios de Bloque 2: Colas y Colas con Prioridad (FIFO -
+        //   In, First Out + Ranking - Mayor Prioridad = Mayor Valor Entero)
+        // =================================================================
 
-        // Ejercicios de Bloque 2: Colas y Colas con Prioridad (FIFO - First In, First Out + Ranking - Mayor Prioridad = Mayor Valor Entero) El primero que entra es el primero que sale a menos que haya alguien más importante que entre después
-
-        // 1 Fila del Cajero
+        // --- 1 Fila del Cajero
 
         ColaPrioridadEstatica cajero = new ColaPrioridadEstatica();
         cajero.InicializarColaPrioridad();
@@ -152,7 +156,7 @@ public class mainClase4 {
             cajero.Desacolar();
         }
 
-        // 2 Impresora de Laboratorio
+        // --- 2 Impresora de Laboratorio
 
         ColaPrioridadEstatica impresora = new ColaPrioridadEstatica();
         impresora.InicializarColaPrioridad();
