@@ -83,7 +83,7 @@ d) 5, `datos[0]`= 5, `base→5,12,3,9,6→tope` \
 e) 35, `datos[0]`= 5, `base→5,12,3,9,6→tope` \
 f) 6, `datos[0]`= 5, `base→5,12,3,9,6→tope` \
 g) 5, `datos[0]`= 5, `base→5,12,3,9,6→tope` \
-h) 7, `datos[0]`= 7, `base→5,12,3,9,6,4,7→tope` \
+h) 7, `datos[0]`= 7, `base→5,12,3,9,6,4,7→tope`
 
 ---
 ### 2) 
@@ -205,7 +205,6 @@ class ConjuntoTDA {
 ```
 </details>
 
----
 ### 5) Ejecutá las instrucciones sobre una cola vacía y para cada línea marcada indicá el valor retornado junto con el contenido de la cola en el formato "Primero → ... → último" o la palabra "vacía" si corresponde.
 
 ```java
@@ -264,6 +263,7 @@ f) 6,
 `{3,7,5,9,4,2}` (datos[0] es el contador\
 g) 6, no se agrega el valor debido a que superaría el máximo de elementos
 `{3,7,5,9,4,2}`
+
 ---
 ### 7) ¿Qué ocurre si llamás a Agregar cuando el conjunto ya está lleno (ConjuntoLleno() = true)? ¿Y si llamás a Agregar con un elemento que ya pertenece al conjunto? Explicá el comportamiento basándote en el código.
 Al intentar agregar un dato que ya pertenece al conjunto se ignora y no se agrega. Si se detecta que el elemento ya pertenece al conjunto mediante el método `pertenece(int x)` (que lo que hace es recorrer con un iterador de 0 a `cantidad-1` comparando por el valor indexado y x), no se agrega
@@ -407,6 +407,7 @@ g) 10, `{7→8, 2→10}`
 
 ---
 ### 13) Ejecutá las operaciones sobre un Diccionario Múltiple vacío. Para cada línea marcada indicá el valor retornado y el estado del diccionario en formato "{clave → {valores}, ...}".
+
 ```java
 DicMultipleTDA dm = new DicMultipleTDA(); dm.InicializarDiccionario();
 dm.Agregar(2,10);
@@ -428,6 +429,7 @@ System.out.println(dm.Recuperar(2));    // (f)
 dm.EliminarValor(2,99);
 System.out.println(dm.Recuperar(2));    // (g)
 ```
+
 a) `[10,15,8]`, `{2→{10,15,8}, 4→{7,3,12}, 6→{5}}` \
 b) `[7,3,12]`, `{2→{10,15,8}, 4→{7,3,12}, 6→{5}}` \
 c) `[2,4,6]`, `{2→{10,15,8}, 4→{7,3,12}, 6→{5}}`\
@@ -435,6 +437,8 @@ d) `[7,12]`, `{2→{10,15,8}, 4→{7,12}, 6→{5}}`\
 e) `[2,4]`, `{2→{10,15,8}, 4→{7,12}}`\
 f) `[10,15,8]`, `{2→{10,15,8}, 4→{7,12}}`\
 g) `[10,15,8]`, `{2→{10,15,8}, 4→{7,12}}`
+
+
 ---
 ### 14) Describí la diferencia conceptual entre Diccionario Simple y Diccionario Múltiple. ¿Qué ocurre en cada uno si se llama a Agregar con una clave que ya existe?
 Conceptualmente la diferencia es que el diccionario simple permite agregar un único valor relacionado a una clave, si intento agregar un valor a una clave ya existente se remplaza el valor. Por otro lado el diccionario multiple permite agregar mas de un valor a una clave. En el diccionario multiple si intento agregar un valor ya existente a una clave no se agrega.
