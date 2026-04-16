@@ -47,6 +47,15 @@ public class DiccionarioSimpleDinamico implements DiccionarioSimpleTDA {
     }
 
     @Override
+    public int Recuperar(int clave) {
+        Node curr = cabeza;
+        while (curr != null && curr.getClave() != clave) {
+            curr = curr.getNext();
+        }
+        return curr != null ? curr.getValor() : -1;
+    }
+
+    @Override
     public int[] Claves() {
         int count = 0;
         Node curr = cabeza;

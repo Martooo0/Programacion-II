@@ -3,9 +3,11 @@ package sources.interfaces;
 public interface DiccionarioSimpleTDA {
     void InicializarDiccionario();
 
-    void Agregar(int var1, int var2);
+    void Agregar(int clave, int valor);
 
-    void Eliminar(int var1);
+    void Eliminar(int clave);
+
+    int Recuperar(int clave);
 
     int[] Claves();
 }

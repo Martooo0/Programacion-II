@@ -1,6 +1,6 @@
 package clase6;
 
-import sources.implementacion.pila.PilaEstatica1;
+import sources.implementacionEstatica.pila.PilaEstatica1;
 import sources.implementacionDinamica.pilaDinamica.PilaDinamica;
 import sources.implementacionDinamica.colaDinamica.ColaDinamica;
 

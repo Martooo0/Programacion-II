@@ -1,4 +1,4 @@
-package sources.implementacion;
+package sources.implementacionEstatica;
 
 import sources.interfaces.ColaPrioridadTDA;
 

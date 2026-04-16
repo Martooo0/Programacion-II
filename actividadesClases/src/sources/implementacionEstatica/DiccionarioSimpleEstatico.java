@@ -1,4 +1,4 @@
-package sources.implementacion;
+package sources.implementacionEstatica;
 
 import sources.interfaces.DiccionarioSimpleTDA;
 
@@ -38,6 +38,13 @@ public class DiccionarioSimpleEstatico implements DiccionarioSimpleTDA {
             valores[i] = valores[cantidad - 1];
             --cantidad;
         }
+    }
+
+    public int Recuperar(int clave) {
+        int i;
+        for(i = 0; i < cantidad && claves[i] != clave; ++i) {
+        }
+        return i < cantidad ? valores[i] : -1;
     }
 
     public int[] Claves() {

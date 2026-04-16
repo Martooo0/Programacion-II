@@ -3,13 +3,13 @@ package sources.interfaces;
 public interface DiccionarioMultipleTDA {
     void InicializarDiccionario();
 
-    void Agregar(int var1, int var2);
+    void Agregar(int clave, int valor);
 
-    void EliminarValor(int var1, int var2);
+    void EliminarValor(int clave, int valor);
 
-    void Eliminar(int var1);
+    void Eliminar(int clave);
 
-    int[] Recuperar(int var1);
+    int[] Recuperar(int clave);
 
     int[] Claves();
 }

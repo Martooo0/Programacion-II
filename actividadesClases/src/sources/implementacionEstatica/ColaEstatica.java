@@ -1,4 +1,4 @@
-package sources.implementacion;
+package sources.implementacionEstatica;
 
 import sources.interfaces.ColaTDA;
 
@@ -17,7 +17,6 @@ public class ColaEstatica implements ColaTDA {
             datos[cantidad] = x;
             ++cantidad;
         }
-
     }
 
     public void Desacolar() {
@@ -25,10 +24,8 @@ public class ColaEstatica implements ColaTDA {
             for(int i = 0; i < cantidad - 1; ++i) {
                 datos[i] = datos[i + 1];
             }
-
             --cantidad;
         }
-
     }
 
     public int Primero() {

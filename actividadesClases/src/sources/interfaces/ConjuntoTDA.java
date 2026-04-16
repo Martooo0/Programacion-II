@@ -3,13 +3,13 @@ package sources.interfaces;
 public interface ConjuntoTDA {
     void InicializarConjunto();
 
-    void Agregar(int var1);
+    void Agregar(int valor);
 
-    void Sacar(int var1);
+    void Sacar(int valor);
 
     boolean ConjuntoVacio();
 
-    boolean Pertenece(int var1);
+    boolean Pertenece(int valor);
 
     int Elegir();
 }

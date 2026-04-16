@@ -9,11 +9,11 @@ import sources.interfaces.DiccionarioMultipleTDA;
 
 // Import Implementaciones Estaticas
 
-import sources.implementacion.pila.PilaEstatica1;
-import sources.implementacion.ColaPrioridadEstatica;
-import sources.implementacion.ConjuntoEstatico;
-import sources.implementacion.DiccionarioMultipleEstatico;
-import sources.implementacion.DiccionarioSimpleEstatico;
+import sources.implementacionEstatica.pila.PilaEstatica1;
+import sources.implementacionEstatica.ColaPrioridadEstatica;
+import sources.implementacionEstatica.ConjuntoEstatico;
+import sources.implementacionEstatica.DiccionarioMultipleEstatico;
+import sources.implementacionEstatica.DiccionarioSimpleEstatico;
 
 public class mainClase4 {
     public static void main(String[] args) {
