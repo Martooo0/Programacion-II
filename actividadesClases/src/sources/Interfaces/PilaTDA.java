@@ -1,6 +1,7 @@
-package sources.Interfaces;
+package interfaces;
 
 public interface PilaTDA {
+
     void InicializarPila();
 
     void Apilar(int var1);

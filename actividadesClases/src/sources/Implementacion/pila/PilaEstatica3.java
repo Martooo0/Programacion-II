@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion.pila;
 
-import sources.Interfaces.PilaTDA;
+import interfaces.PilaTDA;
 
 /**
  * Implementación estática de una Pila (TDA) de complejidad O(1) basada en un contador externo.

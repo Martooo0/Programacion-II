@@ -1,6 +1,6 @@
-package sources.Implementacion_Dinamica;
+package implementacionDinamica.colaDinamica;
 
-import sources.Interfaces.ColaTDA;
+import interfaces.ColaTDA;
 
 public class ColaDinamica implements ColaTDA {
 
@@ -16,7 +16,7 @@ public class ColaDinamica implements ColaTDA {
     @Override
     public void Acolar(int x) {
         // El nuevo nodo se inserta al final (fondo).
-        Node node = new Node(x, null);
+      Node node = new Node(x, null);
         if (ColaVacia()) {
             frente = node;
         } else {

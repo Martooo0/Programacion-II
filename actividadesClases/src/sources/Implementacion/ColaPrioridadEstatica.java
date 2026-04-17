@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.ColaPrioridadTDA;
+import interfaces.ColaPrioridadTDA;
 
 public class ColaPrioridadEstatica implements ColaPrioridadTDA {
     private static final int MAX = 100;

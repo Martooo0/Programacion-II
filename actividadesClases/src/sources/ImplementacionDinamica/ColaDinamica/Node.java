@@ -1,4 +1,4 @@
-package sources.Implementacion_Dinamica;
+package implementacionDinamica.colaDinamica;
 
 public class Node {
 

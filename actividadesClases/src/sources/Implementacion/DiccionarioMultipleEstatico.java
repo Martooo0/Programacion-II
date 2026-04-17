@@ -1,6 +1,6 @@
-package sources.Implementacion;
+package implementacion;
 
-import sources.Interfaces.DiccionarioMultipleTDA;
+import interfaces.DiccionarioMultipleTDA;
 
 /**
  * Implementación de Diccionario Múltiple (TDA) utilizando una matriz para valores.

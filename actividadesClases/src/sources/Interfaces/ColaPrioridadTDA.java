@@ -1,6 +1,7 @@
-package sources.Interfaces;
+package interfaces;
 
 public interface ColaPrioridadTDA {
+
     void InicializarColaPrioridad();
 
     void AcolarPrioridad(int var1, int var2);
