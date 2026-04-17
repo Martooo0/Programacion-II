@@ -1,0 +1,32 @@
+package clase6.guiaTP3;
+
+import interfaces.ColaPrioTDA;
+import interfaces.PilaTDA;
+import interfaces.DicMultipleTDA;
+import implementacionDinamica.colaPrioridadDinamica.ColaPrioridadDinamica;
+import implementacionDinamica.pilaDinamica.PilaDinamica;
+import implementacionDinamica.diccionarioMultipleDinamico.DiccionarioMultipleDinamico;
+
+public class Bloque5 {
+
+    public void ejercicios() {
+        
+        // 1. Hospital Premium
+        ColaPrioTDA guardia = new ColaPrioridadDinamica();
+        guardia.InicializarCola();
+        guardia.AcolarPrioridad(100, 1); 
+
+        // Historial de Síntomas del paciente 100
+        PilaTDA sintomasP100 = new PilaDinamica();
+        sintomasP100.InicializarPila();
+        sintomasP100.Apilar(1); 
+        sintomasP100.Apilar(2); 
+
+        // 2. Sistema de Tags de Facultad 
+        DicMultipleTDA facultad = new DiccionarioMultipleDinamico();
+        facultad.InicializarDiccionario();
+        facultad.Agregar(10, 101);
+        facultad.Agregar(10, 102);
+
+    }
+}
