@@ -1,0 +1,47 @@
+    package clase6.guiaTP3;
+
+import interfaces.ConjuntoTDA;
+import implementacionDinamica.conjuntoDinamico.ConjuntoDinamico;
+
+public class Bloque3 {
+
+    public void ejercicios() {
+        // 1. Padrón Electoral
+        ConjuntoTDA c1 = new ConjuntoDinamico();
+        c1.InicializarConjunto();
+        c1.Agregar(100); 
+        boolean yaVoto = c1.Pertenece(100); // Si da true, no vota de nuevo
+
+        // 2. Invitados a la Fiesta
+        // si agrego a alguien q ya esta no pasa nada, no cambia
+        ConjuntoTDA c2 = new ConjuntoDinamico();
+        c2.InicializarConjunto();
+        c2.Agregar(50);
+        c2.Agregar(50);
+
+        // 3. Filtro de Spam
+        // Se verifica con Pertenece pero usamos un numero como ejemplo
+        ConjuntoTDA c3 = new ConjuntoDinamico();
+        c3.InicializarConjunto();
+        c3.Agregar(999);
+        boolean esSpam = c3.Pertenece(999);
+
+        // 4. Tags de un Blog
+        // Usamos Conjunto porque los tags no tienen un orden y no se repiten
+        ConjuntoTDA c4 = new ConjuntoDinamico();
+        c4.InicializarConjunto();
+        c4.Agregar(10); 
+        c4.Agregar(20); 
+
+        // 5. Gestión de Legajos
+        // Si el id ya existe no lo agrega
+        ConjuntoTDA c5 = new ConjuntoDinamico();
+        c5.InicializarConjunto();
+        c5.Agregar(444); 
+        c5.Agregar(444); 
+
+        // 6. Elegir vs Sacar(Aleatorio)
+        int el = c5.Elegir();
+        int el2 = c5.Elegir(); 
+    }
+}
