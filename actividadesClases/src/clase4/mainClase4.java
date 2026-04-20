@@ -194,12 +194,12 @@ public class mainClase4 {
         System.out.println("--- Guardia del hospital de clínicas:");
 
         System.out.println("El cliente de mayor prioridad es: "
-                + impresora.Primero() + " (prioridad " + impresora.Prioridad() + ")");
+                + guardiaHospital.Primero() + " (prioridad " + guardiaHospital.Prioridad() + ")");
         System.out.println("Orden de la cola de pacientes: ");
 
-        while (!impresora.ColaVacia()) {
-            System.out.print(impresora.Primero() + "");
-            impresora.Desacolar();
+        while (!guardiaHospital.ColaVacia()) {
+            System.out.print(guardiaHospital.Primero() + "");
+            guardiaHospital.Desacolar();
         }
         System.out.println();
         System.out.println();
