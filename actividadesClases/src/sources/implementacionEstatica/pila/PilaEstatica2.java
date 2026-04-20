@@ -41,7 +41,7 @@ public class PilaEstatica2 implements PilaTDA {
 
     @Override
     public int Tope() {
-        return datos[datos[0]]-1;
+        return datos[datos[0]-1];
     }
 
     @Override
