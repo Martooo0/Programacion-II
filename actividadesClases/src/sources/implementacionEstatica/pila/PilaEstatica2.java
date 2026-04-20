@@ -27,7 +27,7 @@ public class PilaEstatica2 implements PilaTDA {
     @Override
     public void Apilar(int x) {
         if (datos[0] < 100) {
-            datos[datos[0]] = x;
+            datos[datos[0]+1] = x;
             datos[0]++;
         }
     }
@@ -41,7 +41,7 @@ public class PilaEstatica2 implements PilaTDA {
 
     @Override
     public int Tope() {
-        return datos[datos[0]-1];
+        return datos[datos[0]];
     }
 
     @Override
