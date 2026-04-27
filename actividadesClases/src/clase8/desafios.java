@@ -19,7 +19,6 @@ public class desafios {
             if (cp.Prioridad() == pBuscada) {
                 contador++;
             }
-            // Resguardamos valor y prioridad original
             aux.AcolarPrioridad(cp.Primero(), cp.Prioridad());
             cp.Desacolar();
         }
