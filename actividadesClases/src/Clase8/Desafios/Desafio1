@@ -1,0 +1,24 @@
+public static boolean esPalindromo(ColaTDA c) {
+    PilaTDA p = new PilaDinamica(); p.InicializarPila();
+    ColaTDA aux = new ColaDinamica(); aux.InicializarCola();
+    while (!c.ColaVacia()) {
+        int valor = c.Primero();
+        p.Apilar(valor);
+        aux.Acolar(valor);
+        c.Desacolar();
+    }
+    
+    boolean esPalin = true;
+    while (!aux.ColaVacia()) {
+        int valOriginal = aux.Primero();
+        int valInvertido = p.Tope();
+        
+        if (valOriginal != valInvertido) {
+            esPalin = false; 
+        }
+        c.Acolar(valOriginal); 
+        aux.Desacolar();
+        p.Desapilar();
+    }
+    return esPalin;
+}

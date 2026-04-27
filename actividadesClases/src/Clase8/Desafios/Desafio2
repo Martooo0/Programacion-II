@@ -1,0 +1,23 @@
+public static int contarPrioridadUno(ColaPrioridadTDA cp) {
+    ColaPrioridadTDA aux0 = new ColaPrioridadDinamica(); aux0.InicializarColaPrioridad();
+    ColaPrioridadTDA aux1 = new ColaPrioridadDinamica(); aux1.InicializarColaPrioridad();
+    int contador = 0;
+    while (!cp.ColaVacia() && cp.Prioridad() == 0) {
+        aux0.AcolarPrioridad(cp.Primero(), 0);
+        cp.Desacolar();
+    }
+    while (!cp.ColaVacia() && cp.Prioridad() == 1) {
+        contador++;
+        aux1.AcolarPrioridad(cp.Primero(), 1);
+        cp.Desacolar();
+    }
+    while (!aux0.ColaVacia()) {
+        cp.AcolarPrioridad(aux0.Primero(), 0);
+        aux0.Desacolar();
+    }
+    while (!aux1.ColaVacia()) {
+        cp.AcolarPrioridad(aux1.Primero(), 1);
+        aux1.Desacolar();
+    }
+    return contador;
+}
