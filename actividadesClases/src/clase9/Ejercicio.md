@@ -1,7 +1,7 @@
-##E jercicio 1: Análisis de ciclos anidados
+## Ejercicio 1: Análisis de ciclos anidados
 
 Consigna: Dado el siguiente método que busca un elemento y realiza una comprobación secundaria en el resto del arreglo, determiná su familia de complejidad temporal O en el peor caso. Justificá tu respuesta analizando los ciclos
-´´´java
+```java
 public static int buscarYValidar(int[] array) {
     for(int i = 0; i < array.length; i++) { // Ciclo N1
         if(array[i] == 5) { // C1
@@ -16,7 +16,7 @@ public static int buscarYValidar(int[] array) {
     }
     return -1; // C5
 }
-´´´
+```
  
 ## Ejercicio 2: Análisis de un algoritmo integrador (Tipo Examen)
 
