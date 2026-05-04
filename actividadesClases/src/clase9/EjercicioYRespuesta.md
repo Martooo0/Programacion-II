@@ -25,14 +25,14 @@
 </details>
 
 ### Respuesta
+buscarYValidar en su primer ciclo busca un elemento del arreglo con un costo O(n), pero, como realiza una comprobación secundaria que también es O(n) y está dentro del mismo recorrido for esto da un resultado de $O(n) \cdot O(n) = O(n^2)$
 
-...
 
 ## Ejercicio 2: Análisis de un algoritmo integrador (Tipo Examen)
 
 <details>
   <summary>Consigna</summary>
-  ## Consigna:  
+  ## Consigna:   
 Se presenta el método filtrar(limite), el cual recibe una Cola original, identifica los elementos mayores a un valor "límite" y los devuelve en una nueva estructura, asegurando que la Cola original quede idéntica a su estado inicial al terminar el proceso
 
 El algoritmo sigue estos pasos:
@@ -48,3 +48,7 @@ Al finalizar, vuelve a volcar los elementos de tmp a la cola original para resta
 </details>
 
 ### Respuesta
+(a) La complejidad temporal es $O(n)$ dado que itera con un while n veces (siendo n la cantidad de elementos de la cola) en dos ocasiones, primero al recorrer la cola y generando comparaciones y luego al rearmarla.
+
+(b) Espacialmente utiliza adicionalmente a la cola y el valor límite ingresado: Una cola auxiliar y una cola resultado que retorna los valores encontrados, por lo que, al ser tipos de objetos iguales, en total se crean dos nuevas cola con cada una el mismo espacio en memoria que la cola ingresada. Finalizado el método dicho objeto auxiliar es eliminado.
+
