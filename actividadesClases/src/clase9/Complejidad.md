@@ -128,18 +128,20 @@ Mantiene el tope de la pila siempre fijo en la posición `0` del arreglo. Para l
 
 ### Conjunto Dinámico
 
-| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(\log n)$ |
+| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(Log(n))$ |
 | --- | --- | --- | --- | --- |
+| InicializarConjunto | x |  |  |  |
 | Agregar |  | x |  |  |
 | Sacar |  | x |  |  |
-| ConjuntoVacio | x |  |  |  |
 | Pertenece |  | x |  |  |
 | Elegir | x |  |  |  |
+| ConjuntoVacio | x |  |  |  |
 
 ### Diccionario Simple Dinámico
 
-| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(\log n)$ |
+| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(Log(n))$ |
 | --- | --- | --- | --- | --- |
+| InicializarDiccionario | x |  |  |  |
 | Agregar |  | x |  |  |
 | Eliminar |  | x |  |  |
 | Recuperar |  | x |  |  |
@@ -147,9 +149,14 @@ Mantiene el tope de la pila siempre fijo en la posición `0` del arreglo. Para l
 
 ### Diccionario Múltiple Dinámico
 
-| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(\log n)$ |
+| Métodos / Complejidad | $O(1)$ | $O(n)$ | $O(n^2)$ | $O(Log(n))$ |
 | --- | --- | --- | --- | --- |
+| InicializarDiccionario | x |  |  |  |
 | Agregar |  | x |  |  |
+| EliminarValor |  | x |  |  |
 | Eliminar |  | x |  |  |
 | Recuperar |  | x |  |  |
 | Claves |  | x |  |  |
+| buscarClave |  | x |  |  |
+| buscarValor |  | x |  |  |
+| existeValor |  | x |  |  |
