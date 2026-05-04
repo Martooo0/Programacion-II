@@ -1,4 +1,4 @@
-# Ejercicio 1: Análisis de ciclos anidados
+## Ejercicio 1: Análisis de ciclos anidados
 
 <details>
   <summary><h3>Consigna</h3></summary>
