@@ -48,7 +48,7 @@ El algoritmo sigue estos pasos:
 
 ### Respuesta
 *Entendiendo que las implementaciones son estáticas:*
-(a) La complejidad temporal es $O(n^2)$ dado que itera con un while n veces (siendo n la cantidad de elementos de la cola) en dos ocasiones, primero al recorrer la cola y generando comparaciones y luego al rearmarla, en ambos casos se utilizan funciones `Acolar` y `Desacolar` (que en cualquiera de las implementaciones al menos una de ellas es $O(n)$).
+(a) La complejidad temporal es $O(n^2)$ dado que itera con un while n veces (siendo n la cantidad de elementos de la cola) en dos ocasiones, primero al recorrer la cola y generando comparaciones y luego al rearmarla, en ambos casos se utilizan funciones `Acolar` y `Desacolar` (que en cualquiera de las implementaciones al menos una de ellas es $O(n)$ ).
 
 (b) Espacialmente es $O(n)$ dado que utiliza adicionalmente a la cola y el valor límite ingresado: Una cola auxiliar y una cola resultado que retorna los valores encontrados, por lo que, al ser tipos de objetos iguales, en total se crean dos nuevas cola con cada una el mismo espacio en memoria que la cola ingresada. Finalizado el método dicho objeto auxiliar es eliminado.
 
