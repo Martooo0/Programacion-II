@@ -24,7 +24,7 @@ public static int buscarYValidar(int[] array) {
 </details>
 
 ### Respuesta
-buscarYValidar en su primer ciclo busca un elemento del arreglo con un costo O(n), pero, como realiza una comprobación secundaria que también es O(n) y está dentro del mismo recorrido for esto da un resultado de $O(n) \cdot O(n) = O(n^2)$
+buscarYValidar en su primer ciclo busca un elemento del arreglo con un costo $O(n)$, pero, como realiza una comprobación secundaria que también es $O(n)$ y está dentro del mismo recorrido for esto da un resultado de $O(n) \cdot O(n) = O(n^2)$
 
 
 ## Ejercicio 2: Análisis de un algoritmo integrador (Tipo Examen)
@@ -41,13 +41,14 @@ El algoritmo sigue estos pasos:
 - Al finalizar, vuelve a volcar los elementos de `tmp` a la cola original para restaurarla.
 
 ### Preguntas:
-(a) Determiná la complejidad temporal O(n) justificando la cantidad de recorridos completos que se realizan sobre los datos.  
-(b) Determiná la complejidad espacial O(n) analizando la necesidad de memoria adicional para las estructuras auxiliares (`tmp` y `res`).
+(a) Determiná la complejidad temporal $O(n)$ justificando la cantidad de recorridos completos que se realizan sobre los datos.  
+(b) Determiná la complejidad espacial $O(n)$ analizando la necesidad de memoria adicional para las estructuras auxiliares (`tmp` y `res`).
 
 </details>
 
 ### Respuesta
-(a) La complejidad temporal es $O(n)$ dado que itera con un while n veces (siendo n la cantidad de elementos de la cola) en dos ocasiones, primero al recorrer la cola y generando comparaciones y luego al rearmarla.
+*Entendiendo que las implementaciones son estáticas:*
+(a) La complejidad temporal es $O(n^2)$ dado que itera con un while n veces (siendo n la cantidad de elementos de la cola) en dos ocasiones, primero al recorrer la cola y generando comparaciones y luego al rearmarla, en ambos casos se utilizan funciones `Acolar` y `Desacolar` (que en cualquiera de las implementaciones al menos una de ellas es $O(n)$).
 
-(b) Espacialmente utiliza adicionalmente a la cola y el valor límite ingresado: Una cola auxiliar y una cola resultado que retorna los valores encontrados, por lo que, al ser tipos de objetos iguales, en total se crean dos nuevas cola con cada una el mismo espacio en memoria que la cola ingresada. Finalizado el método dicho objeto auxiliar es eliminado.
+(b) Espacialmente es $O(n)$ dado que utiliza adicionalmente a la cola y el valor límite ingresado: Una cola auxiliar y una cola resultado que retorna los valores encontrados, por lo que, al ser tipos de objetos iguales, en total se crean dos nuevas cola con cada una el mismo espacio en memoria que la cola ingresada. Finalizado el método dicho objeto auxiliar es eliminado.
 
